@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+</head>
+<body>
+
+<p id="etiqueta1"/>
+
+<script>
+	function fib(x){
+		if (x < 2) {
+			return 1;
+		} else {
+			return fib(x - 1) + fib(x - 2);
+		}
+	}
+	
+	var etiqueta1 = document.getElementById("etiqueta1");
+	etiqueta1.innerHTML=""+fib(45);
+</script>
+</body>
+</html>
