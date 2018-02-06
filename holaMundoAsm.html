@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script src="holaMundoAsm.js"></script>
+
+</head>
+<body>
+
+<p id="etiqueta1"/>
+
+<script>
+	var etiqueta1 = document.getElementById("etiqueta1");
+	var modExporASM = new ModulosExportados();
+	var resultado = modExporASM.fib(45);
+	etiqueta1.innerHTML=""+resultado;
+</script>
+</body>
+</html>
